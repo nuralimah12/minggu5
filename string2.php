@@ -6,14 +6,11 @@
     <body>
         <?php 
         
-        $rawString = "Welcome Birmingham Parent.
-        Your replacemen is pleasure to have!";
-        
-        $malestr = str_replace("replacemen","son",$rawString);
-        $femalestr = str_replace("replaceman", "daughter",$rawString);
-
-        echo "Son: ".$malestr."<br>";
-        echo "Daughter ".$femalestr."<br>"; 
+        $numberedString = "123456789012345678901234567890";
+        $fivePos = strpos($numberedString,"5");
+        echo"Posisi angka 5 di dalam String adalah $fivePos";
+        $fivePos2 = strpos($numberedString,"5",$fivePos+1);
+        echo"<br> Posisi angka 5 di dalam String adalah $fivePos2";
         
         ?>
     </body>
